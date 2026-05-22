@@ -6,3 +6,7 @@ shap
 ipykernel
 geopandas
 openpyxl
+streamlit
+joblib
+matplotlib
+pydeck
