@@ -18,6 +18,12 @@ O **Calor.SSA** é um sistema de monitoramento preditivo e simulação de interv
 
 Enquanto a infraestrutura pública atual possui sistemas eficientes para o alerta de chuvas e deslizamentos de terra, o calor extremo permanece como um risco invisível que sobrecarrega a rede de saúde pública (SUS) com internações evitáveis decorrentes de desidratação, crises respiratórias e cardiovasculares. O **Calor.SSA** preenche essa lacuna ao transformar dados brutos climáticos e de cobertura do solo em alertas acionáveis, permitindo que a gestão municipal antecipe ondas de calor, distribua insumos de hidratação preventivamente e planeje intervenções de infraestrutura verde.
 
+## 1.1. Demonstração Visual (MVP)
+
+Abaixo está o funcionamento do painel interativo, demonstrando a alteração da sensação térmica com base no planejamento urbano:
+
+![Demonstração do Calor.SSA](assets/demo.gif) 
+
 ---
 
 ## 2. Arquitetura
@@ -50,7 +56,7 @@ O ambiente deve possuir o interpretador Python (versão 3.10 ou superior) instal
 
 ## 3. Passo a Passo de Execução
 
-### 3.1. Passo 1: Instalação das Dependências
+### 3.1. Instalação das Dependências
 
 Abra o terminal na pasta raiz do projeto e execute o comando abaixo para instalar todas as bibliotecas listadas no arquivo `requirements.txt`:
 
@@ -60,7 +66,7 @@ pip install -r requirements.txt
 
 ---
 
-### 3.2. Passo 2: Processamento e Treinamento do Modelo (Notebook)
+### 3.2. Processamento e Treinamento do Modelo (Notebook)
 
 Certifique-se de que o arquivo de dados climáticos e as tabelas do MapBiomas estejam na pasta apropriada conforme os caminhos definidos no código (ex: `../resources/`).
 
@@ -80,7 +86,7 @@ O arquivo deve estar localizado no mesmo diretório do script principal da aplic
 
 ---
 
-### 3.3. Passo 3: Execução do Dashboard (Streamlit)
+### 3.3. Execução do Dashboard (Streamlit)
 
 No terminal, certifique-se de estar na mesma pasta onde estão localizados:
 
